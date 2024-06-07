@@ -3,7 +3,7 @@
   "name": "EvidenceOutcomes",
   "description": "The fundamental process of evidence extraction and synthesis in the practice of evidence-based medicine involves extracting PICO (Population, Intervention, Comparison, and Outcome) elements from biomedical literature. However, Outcomes, being the most complex elements, are often overlooked or neglected. To address this issue, we developed a robust annotation guideline for extracting clinically meaningful outcomes from text through iteration and discussion with clinicians and Natural Language Processing experts. Three independent annotators annotated the Results and Conclusions sections of a randomly selected sample of 500 PubMed abstracts and additional 140 PubMed abstracts from the existing EBM-NLP corpus. This resulted in a dataset, EvidenceOutcomes, with high-quality annotations of an inter-rater agreement of 0.76.",
   "license": "https://opensource.org/license/mit",
-  "url": "https://github.com/WengLab-InformaticsResearch/PubMed-RCT-Outcome-Extraction",
+  "url": "https://github.com/ebmlab/EvidenceOutcomes",
   "distribution": [
     {
       "@type": "cr:FileObject",
@@ -26,7 +26,7 @@
     {
       "@type": "cr:RecordSet",
       "name": "500RCT-CoNLL",
-      "description": "500 RCT abstracts selected from PubMed at random.",
+      "description": "500 RCT abstracts randomly selected from PubMed.",
       "field": [
         {
           "@type": "cr:Field",
@@ -59,7 +59,7 @@
         {
           "@type": "cr:Field",
           "name": "start",
-          "description": "Start position of the token.",
+          "description": "Index of the first character of the token.",
           "dataType": "sc:Integer",
           "references": {
             "fileObject": {
@@ -73,7 +73,7 @@
         {
           "@type": "cr:Field",
           "name": "end",
-          "description": "End position of the token.",
+          "description": "Index of the first character after the token.",
           "dataType": "sc:Integer",
           "references": {
             "fileObject": {
@@ -87,7 +87,7 @@
         {
           "@type": "cr:Field",
           "name": "label",
-          "description": "PICO label of BIO format.",
+          "description": "PICO labels in the IOB2 format.",
           "dataType": "sc:Text",
           "references": {
             "fileObject": {
@@ -136,7 +136,7 @@
         {
           "@type": "cr:Field",
           "name": "start",
-          "description": "Start position of the token.",
+          "description": "Index of the first character of the token.",
           "dataType": "sc:Integer",
           "references": {
             "fileObject": {
@@ -150,7 +150,7 @@
         {
           "@type": "cr:Field",
           "name": "end",
-          "description": "End position of the token.",
+          "description": "Index of the first character after the token.",
           "dataType": "sc:Integer",
           "references": {
             "fileObject": {
@@ -164,7 +164,7 @@
         {
           "@type": "cr:Field",
           "name": "label",
-          "description": "PICO label of BIO format.",
+          "description": "PICO labels in the IOB2 format.",
           "dataType": "sc:Text",
           "references": {
             "fileObject": {
